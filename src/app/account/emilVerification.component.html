@@ -1,0 +1,9 @@
+﻿<div class=" h-screen w-full flex justify-center items-center mt-[20vh] ">
+    <h4 class=" text-5xl text-center "> checking your confirmation </h4>
+    <div class=" w-full flex justify-center items-center text-7xl text-center">
+        We are checking your confirmation email code ...
+    </div>
+    <div *ngIf="isVerified" class=" flex flex-col  mt-20">
+        <a  class="nav-item nav-link text-4xl cursor-pointer " *ngIf="isVerified" routerLink="/" routerLinkActive="active">If not transfer click here</a>
+    </div>
+</div>
